@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile First</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!--<div class="page"></div>*/ esse cria um encapsulamento do header e main-->
+  <div class="page">
+        
+    <header>
+      <h1><img src="data:image/jpeg;base64,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" alt="Paletas"></h1>
+      <h1><span>Space cream</span></h1>
+      
+    </header>
+
+    <main>
+      
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet.</p>
+        
+      </div>
+
+      <div class="card">
+        <img 
+        src="https://images.unsplash.com/photo-1586769412527-ab0855979b2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60" 
+        alt="Paletas">
+        <h2><span>Paletas</span></h2>
+      </div>
+      
+      <div class="card">
+        <img 
+        src="https://images.unsplash.com/photo-1599937577325-e38f27f010db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60" 
+        alt="shakes">
+        <h2><span>shakes</span></h2>
+      </div>
+      
+      <div class="card">
+        <img 
+        src="https://media.istockphoto.com/id/1257724848/pt/foto/vanilla-ice-cream-with-ice-cream-scoop.jpg?s=612x612&w=0&k=20&c=tyDFkqv4pARD0a3ACZIAdV4xYsEtMdZr9V6nQxkuFIY=" 
+        alt="Massas">
+        <h2><span>Massas</span></h2>
+      </div>
+      
+      <div class="card">
+        <img 
+        src="https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8UGljb2xlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" 
+        alt="Picoles">
+        <h2><span>Picolés</span></h2>
+      </div>
+      
+  </main>
+</div>
+  
+</body>
+</html>

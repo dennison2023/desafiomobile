@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--ff-heading: 'Staatliches', sans-serif;
+
+--bg-primary: #8E9AAF;
+
+--fc-primary: #ffffff;  
+--fc-secundary:  #4A4E69;
+
+font-size: 62.5%;
+}
+
+
+header {
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--ff-heading);
+
+  background-color: var(--bg-primary);
+  color: var(--fc-primary);
+  
+
+}
+
+body {
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--ff-heading);
+  color: var(--fc-secundary);
+  line-height: 3.4rem;
+  
+
+  margin-top: 40;
+  margin-top: 50;
+}
+
+/*após o encapsulamento no HTML do header e main esse
+ .page define a largura máxima da caixa (max-width: 33rem;)
+ e (margin: 0 auto;) para centralizar e ficar mais estilo Mobile*/
+.page {
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
+/*aqui define a lagura máxima da imagem na caixa(width: 100%;)
+e a altura deacordo com sua proporção dentro dos 100%(height: auto;)*/
+img {
+  width: 100%;
+  height: auto;
+
+  
+}
+
+header p {
+  margin: 40 0 50;
+}
+
+main p {
+color: #23053A;
+font-family: 'Palanquin';
+font-style: normal;
+font-weight: 400;
+
+}
+
+.card {
+ position: relative; 
+ font-family: var(--ff-heading);
+ 
+}
+
+/*definindo a altura da imagem(height: 25rem;)
+e esse é para definir que a imagem faça uma 
+coberttura da caixa( object-fit: cover;) e efeitos na imagem (transition: transform 200ms;)*/
+.card img {
+  height: 25rem;
+  object-fit: cover;
+
+  border-radius: 20px;
+
+ 
+  transition: all 200ms;
+  
+}
+
+/*aqui colou efeito na img*/
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+/*faz com que os textos fiquem sobrepostos na imagem*/
+.card h2 {
+ position: absolute; 
+ top: 2rem;
+ right: 2rem;
+}
+
+/*configurações do texto em forma de botão dentro da imagem*/
+.card h2 span {
+  border-radius: 2rem;
+  background-color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4A4E69;
+  padding: 0 1.6rem;
+  height: 3.8rem;
+}
+
+header img {
+  width: 50%;
+  height: 50;
+ 
+}
+
+main {
+  background-color:#EFF1FF;
+  display: grid;
+  gap: 2rem
+}
+
+header h1 span {
+  background-color:  #CBC0D3;
+  padding: 0 11rem;
+  
+}
+/*em qual o campo  foi colocada as animações*/
+header {
+   
+   animation: topdown 700ms;
+}
+
+main {
+  animation: downtop 700ms 350ms backwards;  
+}
+
+/*para colocar animações em determinados campos da página, nesse código foi colocado no header*/
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*para colocar animações em determinados campos da página, nesse código foi colocado no main*/
+@keyframes downtop {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+  
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+  
+    }
+}    
+
+  
